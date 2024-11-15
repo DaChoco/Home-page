@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #0b1515;
     margin: 0rem;
@@ -12,6 +15,12 @@ li{
     margin-right: 10px;
 }
 
+section{
+    transition: 0.8s;
+}
+
+
+
 .nav-style{
    display: inline-block;  
    margin-right: 1rem; 
@@ -22,15 +31,38 @@ li{
 
 .nav-container{
     background-color:#090c0c;
+    width: 100vw;
     padding: 1rem;
+    position: fixed;
     margin-top: 0rem;
     justify-content: space-between;
-    padding: 8px;
+    padding: 1rem;
     display: flex;
+    z-index: 1000;
 }
 
+.nav-text-title{
+    color:rgb(239, 241, 241);
+    margin-right: 10px;
+    size: 22px;
+    font-family: 'Rubik';
+}
+    .nav-text{
+        color:rgb(171, 197, 197);
+        margin-right: 10px;
+        size: 22px;
+        font-family: 'Rubik';
+        transition: 0.7s ease-in-out;
+    }
+    .nav-text:hover{
+        color: rgb(128, 247, 247);
+    }
+
 .intro-container{
-    padding-left: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
     display: flex;
     
 }
@@ -40,42 +72,54 @@ li{
         padding: 0%
     }
 
+    .aboutme-text{
+        padding-left: 2rem ;
+    }
+
 .buttons{
     border-radius: 1rem;
-    background-color: #223637;
+    background-color: #3b928e;
     padding: 1rem;
     border: none;
+    font-family: 'Rubik';
     color: rgb(173, 187, 184);
     transition: 0.5s ease-in-out;
     margin-right: 10px;
     
 }
     .buttons:hover{
-        background-color: #0d1717;
+        background-color: #346f6f;
         color: rgb(46, 204, 221);
     }
-.nav-text{
-    color:rgb(239, 241, 241);
-    margin-right: 10px;
-    size: 22px;
-    font-family: 'Rubik';
-}
+
 
 .normal-text{
     color: rgb(160, 185, 176);
     font-family:'Rubik';
-    padding: 10px;
+    padding: 1rem;
 }
 
 .my-intro{
-    color:rgb(59, 168, 132);
-    transition: width 0.6s ease-in-out;
+    color:rgb(24, 29, 29);
+    transition: width 0.9s ease-in-out;
     text-decoration: none;
     font-family: 'Poppins';
+    padding: 1rem;
+    padding-top: 2rem;
+    
+    margin-left: 10rem;
+    position: relative;
   
 }
+    .not-normal_text{
+        color:rgb(20, 65, 65);
+        font-family:'Rubik';
+        padding: 1rem;
+        margin-left: 10rem;
+
+    }
     .my-intro:hover{
-        color: rgb(12, 201, 138);
+        color: rgb(35, 168, 101);
         text-decoration:underline;
         
     }
@@ -84,5 +128,25 @@ li{
     color: rgb(188, 212, 212);
     font-family: 'Poppins';
 
+}
+.header-wrapping{
+    padding: 1rem;
+    padding-bottom: 10rem;
+    opacity: 0.9;
+    padding-top: 10rem;
+    
+    visibility: visible;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position:relative;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0b1515 100%), /* Corrected gradient */
+        url('./images/BG_mine.PNG');
+        
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
 }
    
