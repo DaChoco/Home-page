@@ -119,7 +119,6 @@ section{
 
     }
     .my-intro:hover{
-        color: rgb(35, 168, 101);
         text-decoration:underline;
         
     }
@@ -142,7 +141,7 @@ section{
     position:relative;
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0b1515 100%), /* Corrected gradient */
-        url('./images/BG_mine.PNG');
+        url('./images/BG_mine_2.PNG');
         
     background-size: cover;
     background-repeat: no-repeat;
