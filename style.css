@@ -2,10 +2,15 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    opacity: 0.01;
+    transition: opacity 0.8s ease-in;
     background-color: #0b1515;
     margin: 0rem;
     padding: 0;
 }
+    body.loaded{
+        opacity: 1;
+    }
 ul { 
     list-style: none;
 }
