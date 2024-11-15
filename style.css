@@ -29,6 +29,17 @@ li{
     display: flex;
 }
 
+.intro-container{
+    padding-left: 5rem;
+    display: flex;
+    
+}
+    .my-photo{
+        aspect-ratio:1/1;
+        width: 40%;
+        padding: 0%
+    }
+
 .buttons{
     border-radius: 1rem;
     background-color: #223637;
@@ -53,6 +64,7 @@ li{
 .normal-text{
     color: rgb(160, 185, 176);
     font-family:'Rubik';
+    padding: 10px;
 }
 
 .my-intro{
