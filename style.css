@@ -1,10 +1,27 @@
 html{
     scroll-behavior: smooth;
 }
+
+a{
+    text-decoration: none;
+}
+i{
+    size: 16px;
+    padding: 0;
+    padding-left: 1rem;
+    color:aliceblue;
+    font-size: 16px;
+}
+
+.diagonal-split {
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background: linear-gradient(150deg, rgb(50, 196, 99) 50%, #090f0f 50%);
+  }
 body{
     opacity: 0.01;
     transition: opacity 0.8s ease-in;
-    background-color: #0b1515;
+    background-color: #090f0f;
     margin: 0rem;
     padding: 0;
 }
@@ -13,6 +30,9 @@ body{
     }
 ul { 
     list-style: none;
+}
+h2{
+    margin-left: 5rem;
 }
 
 li{
@@ -28,7 +48,7 @@ section{
 
 .nav-style{
    display: inline-block;  
-   margin-right: 1rem; 
+   margin-right: 2rem; 
    text-align: right;
    
  
@@ -40,6 +60,7 @@ section{
     padding: 1rem;
     position: fixed;
     margin-top: 0rem;
+    padding-top: 2rem;
     justify-content: space-between;
     padding: 1rem;
     display: flex;
@@ -83,18 +104,36 @@ section{
 
 .buttons{
     border-radius: 1rem;
-    background-color: #3b928e;
+    background-color: #264b49;
     padding: 1rem;
+    margin-right: 3rem;
     border: none;
     font-family: 'Rubik';
-    color: rgb(173, 187, 184);
+    color: rgb(205, 224, 220);
     transition: 0.5s ease-in-out;
     margin-right: 10px;
     
 }
     .buttons:hover{
-        background-color: #346f6f;
-        color: rgb(46, 204, 221);
+        background-color: #1f4b4b;
+        color: rgb(81, 217, 185);
+    }
+
+.buttons-hero{
+    border-radius: 1rem;
+    background-color: #0b1515;
+    padding: 1rem;
+    margin-left: 10rem;
+    font-size: 32px;
+    border: none;
+    font-family: 'Rubik';
+    color: rgb(173, 187, 184);
+    transition: 0.5s ease-in-out;
+    margin-right: 10px;
+
+}
+    .buttons-hero:hover{
+        color:rgb(46, 204, 221);
     }
 
 
@@ -103,6 +142,9 @@ section{
     font-family:'Rubik';
     padding: 1rem;
 }
+    .normal-text-sections{
+        font-size: 22px;
+    }
 
 .my-intro{
     color:rgb(24, 29, 29);
@@ -112,7 +154,7 @@ section{
     padding: 1rem;
     padding-top: 2rem;
     
-    margin-left: 10rem;
+    margin-left: 5rem;
     position: relative;
   
 }
@@ -120,7 +162,8 @@ section{
         color:rgb(20, 65, 65);
         font-family:'Rubik';
         padding: 1rem;
-        margin-left: 10rem;
+        margin-left: 5rem;
+        position: relative;
 
     }
     .my-intro:hover{
@@ -131,6 +174,8 @@ section{
 .section-headings{
     color: rgb(188, 212, 212);
     font-family: 'Poppins';
+    font-size: 32px;
+    margin: 0rem;
 
 }
 .header-wrapping{
@@ -144,13 +189,27 @@ section{
     width: 100vw;
     z-index: 10;
     position:relative;
-    background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0b1515 100%), /* Corrected gradient */
-        url('./images/BG_mine_2.PNG');
+    /*background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0b1515 100%), 
+        url('./images/BG_mine_2.PNG');*/
         
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: scroll;
 }
+.header-text-container{
+    margin-left: 5rem;
+    align-content: center;
+}
+
+.skill-container{
+    margin-left:5rem;
+    transition: 0.5s;
+    width: 33%;
+}
+    .skill-container:hover{
+        background-color: #0b1515;
+        border-radius: 1rem;
+    }
    
