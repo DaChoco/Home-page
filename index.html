@@ -25,10 +25,11 @@
             
             <div class="nav-style">
                 <ul>
+                    <li><a href="#Home" class="nav-text">Home</a></li>
                     <li><a href="#About-me" class="nav-text">About</a></li>
-                    <li><a href= "#Projects" class="nav-text">Work and projects</a></li>
                     <li><a href= "#Skills" class="nav-text">Expertise</a></li>
-                    <li><a href="cv.pdf" download="cv.pdf" class="buttons">Download CV</a></li>
+                    <li><a href= "#Projects" class="nav-text">Work and projects</a></li>
+                    <li><a href="cv.pdf" download="cv.pdf"><button class="buttons">Download CV</button></a></li>
                 </ui>  
             </div>
 
@@ -38,20 +39,25 @@
         <!--End of-->
 
         <header>
-            <div class="header-wrapping diagonal-split">
+            <div class="header-wrapping diagonal-split" id="Home">
                 <div class="header-text-container">
                     <h1><span class="my-intro">Hello. I'm Maile Chokoe, Fullstack developer based in South Africa</span></h1>
                     <h2 class="not-normal_text">I love helping others, so let me help you</h2>
                 </div>
                 <br>
                     <ul class="header-text-container">
-                        <li><a class="not-normal_text" href="https://github.com/DaChoco">View GitHub</a></li>
-                        <li><a class="not-normal_text" href="https://www.linkedin.com/in/maile-chokoe-315237194/">View LinkedIn</a></li>
+                        <li><a class="not-normal_text" href="https://github.com/DaChoco">
+                            GitHub<i class="fa-brands fa-github fa-2x icon-front"></i></a>
+                        </li>
+                        
+                        <li><a class="not-normal_text" href="https://www.linkedin.com/in/maile-chokoe-315237194/">
+                            Linkedin<i class="fa-brands fa-linkedin fa-2x icon-front"></i></a>
+                        </li>
 
                     </ul>
                 
 
-                <div>
+                <div class="insidediv-gap">
                     <a href="" class="buttons-hero">Work with me!</a>
                 </div>
             </div>
@@ -84,14 +90,14 @@
             <div class="intro-container">
                 <h3 class="section-headings">Expertise</h3>
                 <div class="skill-container">
-                    <i class="fa-brands fa-js fa-4x"></i>
+                    <i class="fa-brands fa-js fa-4x icon-skills"></i>
                     <h4 class="normal-text normal-text-sections">Javascript</h4>
                     <p class=" normal-text normal-text-sections">I am learning how to build extensive interactive web applications with Javascript</p>
                 </div>
 
                 <div class="skill-container">
-                    <i class="fa-brands fa-html5 fa-4x"></i>
-                    <i class="fa-brands fa-css3-alt fa-4x"></i>
+                    <i class="fa-brands fa-html5 fa-4x icon-skills"></i>
+                    <i class="fa-brands fa-css3-alt fa-4x icon-skills"></i>
                     <h4 class="normal-text normal-text-sections">HTML5 & CSS</h4>
                     <p class=" normal-text normal-text-sections">Sites such as this portfolio itself have been a great tool for practicing HTML5 and CSS. I do intend to redo
                         this site when I gain a stronger understanding of frameworks such as Tailwind and or React.
@@ -106,8 +112,13 @@
 
         <section id="Projects">
             <div class="intro-container">
-                <h3 class="section-headings">Work and Projects</h3>
-                <p class="normal-text">I have many projects yet to complete. So for now this shall be a placeholder.</p>
+                <h3 class="section-headings">Personal Projects</h3>
+                <div>
+                    <p class="normal-text">I have many projects yet to complete. So for now this shall be a placeholder.</p>
+
+                </div>
+                
+                
             </div>
 
             <div>
@@ -117,9 +128,30 @@
         </section>
 
         <section id="Emails">
-            <div class="Email-Container">
+            <form>
+                <h3 class="section-headings contact-positioning">Contact</h3>
+                <div class="Email-Container">
+                
+                    <label for="name" class="normal-text">Name:</label>
+                    <input type="text" name="yourname" id="name" placeholder="Name" class="email-in">
 
-            </div>
+                    <label for="emailAd" class="normal-text">Email:</label>
+                    <input type="text" name="yourname" id="emailAd" placeholder="Email" class="email-in">
+
+                </div>
+
+                <div class="Email-Container">
+                    <label for="Write" class="normal-text">Write:</label>
+                    <textarea id="Write" placeholder="Message" class="email-write" rows="10" ></textarea>
+                </div>
+
+                <div class="send-container">
+                    <button type="submit" class="send-button">Send!</button>
+                </div>
+                    
+
+            </form>
+            
 
         </section>
 

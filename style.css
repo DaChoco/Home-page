@@ -9,8 +9,15 @@ i{
     size: 16px;
     padding: 0;
     padding-left: 1rem;
-    color:aliceblue;
     font-size: 16px;
+}
+.icon-skills{
+    color:rgb(215, 232, 247);
+}
+
+.icon-front{
+    color:rgb(14, 19, 23);
+
 }
 
 .diagonal-split {
@@ -23,7 +30,9 @@ body{
     transition: opacity 0.8s ease-in;
     background-color: #090f0f;
     margin: 0rem;
+    margin-bottom: 1rem;
     padding: 0;
+    display: flex;
 }
     body.loaded{
         opacity: 1;
@@ -47,7 +56,7 @@ section{
 
 
 .nav-style{
-   display: inline-block;  
+   display: flex;  
    margin-right: 2rem; 
    text-align: right;
    
@@ -95,6 +104,7 @@ section{
     .my-photo{
         aspect-ratio:1/1;
         width: 40%;
+        height: auto;
         padding: 0%
     }
 
@@ -104,12 +114,12 @@ section{
 
 .buttons{
     border-radius: 1rem;
-    background-color: #264b49;
-    padding: 1rem;
+    background-color: #03c9bf;
+    padding: 0.5rem;
     margin-right: 3rem;
     border: none;
     font-family: 'Rubik';
-    color: rgb(205, 224, 220);
+    color: rgb(2, 12, 10);
     transition: 0.5s ease-in-out;
     margin-right: 10px;
     
@@ -121,9 +131,10 @@ section{
 
 .buttons-hero{
     border-radius: 1rem;
-    background-color: #0b1515;
+    background-color: #041b1b;
     padding: 1rem;
     margin-left: 10rem;
+    margin-top: 5rem;
     font-size: 32px;
     border: none;
     font-family: 'Rubik';
@@ -212,4 +223,52 @@ section{
         background-color: #0b1515;
         border-radius: 1rem;
     }
+.insidediv-gap{
+    margin-top: 5rem;
+}
+
+.Email-Container{
+    margin:5rem;
+    display: flex;
+    flex-direction: row;
+}
+    .contact-positioning{
+        margin-left: 10rem;
+    }
+    .email-in{
+        width:50%
+    }
+    .email-write{
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
+
+.send-container{
+    justify-content: right;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5rem;
+}
+.send-button{
+    justify-content: center;
+    display: inline-flex;
+    padding: 1rem;
+    background-color: #03c9bf;
+    border-radius: 0.5rem;
+    border-color: #275f5c;
+    position: relative;
+    justify-self: right;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    width: 10%;
+
+    border: none;
+    font-family: 'Rubik';
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
    
