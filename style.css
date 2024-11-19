@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 
-a{
+.nav-style a{
     text-decoration: none;
 }
 i{
@@ -59,8 +59,7 @@ section{
    display: flex;  
    margin-right: 2rem; 
    text-align: right;
-   
- 
+   visibility: visible;
 }
 
 .nav-container{
@@ -71,7 +70,6 @@ section{
     margin-top: 0rem;
     padding-top: 2rem;
     justify-content: space-between;
-    padding: 1rem;
     display: flex;
     z-index: 1000;
 }
@@ -228,7 +226,9 @@ section{
 }
 
 .Email-Container{
-    margin:5rem;
+    margin-left:5rem;
+    margin-right:5rem;
+    margin-bottom: 2rem;;
     display: flex;
     flex-direction: row;
 }
@@ -248,6 +248,7 @@ section{
     justify-content: right;
     display: flex;
     flex-direction: row-reverse;
+
     margin-right: 5rem;
 }
 .send-button{
@@ -270,5 +271,76 @@ section{
 form{
     display: flex;
     flex-direction: column;
+    background-color: #031111;
+    margin: 5rem;
+    border-radius: 1rem;
 }
+.menu-icon{
+    visibility: hidden;
+}
+
+/*Media querries*/ 
+
+@media screen and (max-width: 768px){
+    *{
+        transition: 0.8s;
+    }
+    body{
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+    form {
+        width: 50%;
+        display: flex;
+        padding: 2rem;
+    }
+    .intro-container{
+        width: 50vw;
+        flex-direction: column;
+        padding: 5rem;
+        gap: 10px;
+        
+    }
+    .skill-container{
+        margin: 0rem;
+        width: 75vw;
+        margin-right: 2rem;
+    }
+    .my-photo{
+        width: 100%;
+        height: auto;
+    }
+
+    .Email-Container{
+        width: 50%;
+        flex-direction: column;
+        gap: 10px;
+        
+
+    }
+    .contact-positioning{
+        margin-left: 0rem;
+        margin-right: 10rem;
+    }
+    input{
+        width: 100%;
+    }
+    .nav-container{
+        padding: 0rem;
+    }
+    .nav-style{
+        visibility: hidden;
+        flex-direction: column;
+    }
+    .menu-icon{
+        color:aliceblue;
+        visibility: visible;
+        margin: 1rem;
+        
+    }
+}
+
+
    
