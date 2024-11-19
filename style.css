@@ -27,7 +27,7 @@ i{
   }
 body{
     opacity: 0.01;
-    transition: opacity 0.8s ease-in;
+    transition: opacity 0.3s ease-in;
     background-color: #090f0f;
     margin: 0rem;
     margin-bottom: 1rem;
@@ -68,7 +68,7 @@ section{
     padding: 1rem;
     position: fixed;
     margin-top: 0rem;
-    padding-top: 2rem;
+    padding: 0rem;
     justify-content: space-between;
     display: flex;
     z-index: 1000;
@@ -152,7 +152,7 @@ section{
     padding: 1rem;
 }
     .normal-text-sections{
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
 .my-intro{
@@ -183,6 +183,7 @@ section{
 .section-headings{
     color: rgb(188, 212, 212);
     font-family: 'Poppins';
+    justify-self: center;
     font-size: 32px;
     margin: 0rem;
 
@@ -281,32 +282,39 @@ form{
 
 /*Media querries*/ 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){ /*Expensive phones*/
     *{
-        transition: 0.8s;
+        
+        line-height: 1.5rem;
     }
     body{
-        margin-right: 2rem;
-        margin-bottom: 2rem;
-        margin-top: 0rem;
-        margin-left: 0rem;
+        
+        z-index: 1;
+        
     }
     form {
-        width: 50%;
+        width: 75vw;
         display: flex;
-        padding: 2rem;
+        padding: 1rem;
+        margin: 2rem;
+        justify-self: center;;
+        justify-content: center;
+        
+        overflow: hidden;
     }
     .intro-container{
         width: 50vw;
         flex-direction: column;
-        padding: 5rem;
+        justify-self: center;
+        padding: 0rem;
         gap: 10px;
         
     }
     .skill-container{
         margin: 0rem;
         width: 75vw;
-        margin-right: 2rem;
+        justify-self: center;
+        
     }
     .my-photo{
         width: 100%;
@@ -314,20 +322,44 @@ form{
     }
 
     .Email-Container{
-        width: 50%;
+        width: 75vw;
         flex-direction: column;
         gap: 10px;
+        justify-content: center;
+        position: relative;
         
 
     }
     .contact-positioning{
-        margin-left: 0rem;
-        margin-right: 10rem;
+        justify-content: center;
+        margin: 0rem;
+        
+    }
+    .header-wrapping{
+        margin-top: 5rem;
+        justify-content: center;
+        padding: 0rem;
     }
     input{
         width: 100%;
     }
     .nav-container{
+        padding: 0rem;
+        margin: 0rem;
+        width: 100vw;
+        height: 6rem;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: fixed;
+    }
+
+    .header-text-container{
+        margin: 0rem;
+        position: relative;
+        justify-content: center;
+        justify-self: center;
         padding: 0rem;
     }
     .nav-style{
@@ -340,7 +372,38 @@ form{
         margin: 1rem;
         
     }
+
+    .normal-text{
+        font-size: 1.2rem;
+    }
+    .email-write{
+        width: 75%;
+    }
+    .email-in{
+        width: 75%;
+    }
+    img{
+        margin-top: 1rem;
+    }
+    .section-headings{
+        margin: 0.8rem;
+    }
+    .send-button{
+        width: 30%;
+    }
+    .my-intro{
+        justify-self: center;
+        position: relative;
+        font-size: 1rem;
+        margin: 0rem;
+        padding: 0;
+    }
+    .not-normal_text{
+        margin: 0rem;
+        padding: 0rem;
+    }
 }
+
 
 
    
