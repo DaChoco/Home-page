@@ -51,6 +51,7 @@ li{
 
 section{
     transition: 0.8s;
+    display: grid;
 }
 
 
@@ -97,6 +98,8 @@ section{
     padding-bottom: 5rem;
     padding-top: 10rem;
     display: flex;
+
+    
     
 }
     .my-photo{
@@ -228,7 +231,7 @@ section{
 
 .Email-Container{
     margin-left:5rem;
-    margin-right:5rem;
+    
     margin-bottom: 2rem;;
     display: flex;
     flex-direction: row;
@@ -291,10 +294,16 @@ form{
         
         z-index: 1;
         
+        
+    }
+    .normal-text-sections{
+        justify-self: center;
     }
     form {
         width: 75vw;
-        display: flex;
+        display: grid;
+        grid-template-rows: 3fr;
+        grid-template-columns: auto;
         padding: 1rem;
         margin: 2rem;
         justify-self: center;;
@@ -303,12 +312,21 @@ form{
         overflow: hidden;
     }
     .intro-container{
-        width: 50vw;
+        width: 75vw;
         flex-direction: column;
         justify-self: center;
+        
+        overflow: hidden;
         padding: 0rem;
         gap: 10px;
+
+        word-wrap: break-word;
+        word-break: normal;
+        white-space: pre-wrap;
         
+    }
+    .icon-skill-area{
+        display:flex;
     }
     .skill-container{
         margin: 0rem;
@@ -326,6 +344,7 @@ form{
         flex-direction: column;
         gap: 10px;
         justify-content: center;
+        margin-left: 0rem;
         position: relative;
         
 
@@ -342,6 +361,7 @@ form{
     }
     input{
         width: 100%;
+        justify-self: center;
     }
     .nav-container{
         padding: 0rem;
@@ -375,6 +395,7 @@ form{
 
     .normal-text{
         font-size: 1.2rem;
+        padding: 0rem;
     }
     .email-write{
         width: 75%;
