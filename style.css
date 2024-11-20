@@ -103,9 +103,11 @@ section{
     
 }
     .my-photo{
+        transition: 0.3s;
         aspect-ratio:1/1;
         width: 40%;
         height: auto;
+        aspect-ratio: 1/1;
         padding: 0%
     }
 
@@ -304,8 +306,8 @@ form{
         display: grid;
         grid-template-rows: 3fr;
         grid-template-columns: auto;
-        padding: 1rem;
-        margin: 2rem;
+        padding: 2rem;
+        margin: 1rem;
         justify-self: center;;
         justify-content: center;
         
@@ -337,14 +339,20 @@ form{
     .my-photo{
         width: 100%;
         height: auto;
+        aspect-ratio: 1/1;
     }
 
     .Email-Container{
         width: 75vw;
         flex-direction: column;
         gap: 10px;
-        justify-content: center;
-        margin-left: 0rem;
+        margin: 0rem;
+        justify-self: center;
+
+        word-wrap: break-word;
+        word-break: normal;
+        white-space: pre-wrap;
+        
         position: relative;
         
 
@@ -358,10 +366,6 @@ form{
         margin-top: 5rem;
         justify-content: center;
         padding: 0rem;
-    }
-    input{
-        width: 100%;
-        justify-self: center;
     }
     .nav-container{
         padding: 0rem;
@@ -398,10 +402,13 @@ form{
         padding: 0rem;
     }
     .email-write{
-        width: 75%;
+        width: 85%;
+        padding: 0rem;
     }
     .email-in{
-        width: 75%;
+        width: 85%;
+        justify-self: right;
+        padding: 0rem;
     }
     img{
         margin-top: 1rem;
