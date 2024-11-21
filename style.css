@@ -96,23 +96,31 @@ section{
     padding-left: 10rem;
     padding-right: 10rem;
     padding-bottom: 5rem;
-    padding-top: 10rem;
-    display: flex;
-
-    
-    
+    padding-top: 5rem;
+    display: flex;     
 }
     .my-photo{
-        transition: 0.3s;
+        transition: 0.2s;
         aspect-ratio:1/1;
         width: 40%;
         height: auto;
         aspect-ratio: 1/1;
         padding: 0%
     }
+ .my-photo.project-photos{
+        transition: 0.4s;
+        border-radius: 1rem;
+        
+    }
+        .my-photo.project-photos:hover{
+            transform: scale(1.1);
+            aspect-ratio: 1/1;
+            z-index: 100;
+        }
 
     .aboutme-text{
         padding-left: 2rem ;
+
     }
 
 .buttons{
@@ -232,9 +240,8 @@ section{
 }
 
 .Email-Container{
-    margin-left:5rem;
-    
     margin-bottom: 2rem;;
+    margin-right: 1rem;
     display: flex;
     flex-direction: row;
 }
@@ -249,13 +256,19 @@ section{
         margin-top: 1rem;
         
     }
+.intro-container .Project-Container{
+    display: grid;
+    grid-template: 1fr 1fr;
+}
+
+.project-object{
+    justify-content: center;
+}
 
 .send-container{
     justify-content: right;
     display: flex;
     flex-direction: row-reverse;
-
-    margin-right: 5rem;
 }
 .send-button{
     justify-content: center;
@@ -277,7 +290,7 @@ section{
 form{
     display: flex;
     flex-direction: column;
-    background-color: #031111;
+    background-color: #0a2a2a;
     margin: 5rem;
     border-radius: 1rem;
 }
@@ -302,11 +315,10 @@ form{
         justify-self: center;
     }
     form {
-        width: 75vw;
+        width: 90vw;
         display: grid;
         grid-template-rows: 3fr;
         grid-template-columns: auto;
-        padding: 2rem;
         margin: 1rem;
         justify-self: center;;
         justify-content: center;
@@ -339,11 +351,11 @@ form{
     .my-photo{
         width: 100%;
         height: auto;
-        aspect-ratio: 1/1;
+        
     }
 
     .Email-Container{
-        width: 75vw;
+        width: 80vw;
         flex-direction: column;
         gap: 10px;
         margin: 0rem;
@@ -404,11 +416,12 @@ form{
     .email-write{
         width: 85%;
         padding: 0rem;
+        justify-self: center;
     }
     .email-in{
-        width: 85%;
-        justify-self: right;
+        width: 85%; 
         padding: 0rem;
+        justify-self: center;
     }
     img{
         margin-top: 1rem;
@@ -418,6 +431,7 @@ form{
     }
     .send-button{
         width: 30%;
+        margin: 1rem;
     }
     .my-intro{
         justify-self: center;
