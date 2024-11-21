@@ -3,6 +3,7 @@ window.onload = function(){ //loading animation?
 }
 
 function toggleMenu(){
-    const menuLinks = document.querySelector('.nav-links');
-    menuLinks.classList.toggle('show');
+    const sidebar = document.querySelector('.sidenav');
+    sidebar.style.display = 'flex';
+    
 }

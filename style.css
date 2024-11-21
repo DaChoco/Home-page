@@ -5,6 +5,13 @@ html{
 .nav-style a{
     text-decoration: none;
 }
+
+header{
+    margin-top: 5rem;
+}
+.sidenav{
+    display: none;
+}
 i{
     size: 16px;
     padding: 0;
@@ -23,16 +30,16 @@ i{
 .diagonal-split {
     width: 300px; /* Adjust width as needed */
     height: 300px; /* Adjust height as needed */
-    background: linear-gradient(150deg, rgb(50, 196, 99) 50%, #090f0f 50%);
+    background: linear-gradient(155deg, rgb(50, 196, 99) 50%,  #0c1313 50%);
   }
 body{
     opacity: 0.01;
     transition: opacity 0.3s ease-in;
-    background-color: #090f0f;
-    margin: 0rem;
-    margin-bottom: 1rem;
+    background-color: #0c1313;
+    margin: 0rem 0rem 1rem 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
     body.loaded{
         opacity: 1;
@@ -66,13 +73,15 @@ section{
 .nav-container{
     background-color:#090c0c;
     width: 100vw;
-    padding: 1rem;
+    z-index: 1;
     position: fixed;
-    margin-top: 0rem;
-    padding: 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    height: 5rem;
+    
     justify-content: space-between;
     display: flex;
-    z-index: 1000;
+    box-sizing: border-box;
+    
 }
 
 .nav-text-title{
@@ -143,19 +152,22 @@ section{
 .buttons-hero{
     border-radius: 1rem;
     background-color: #041b1b;
+    box-sizing: border-box;
     padding: 1rem;
-    margin-left: 10rem;
-    margin-top: 5rem;
+    justify-self: center;
+    margin: 2.5rem;
+    margin-left: 5rem;
+    position: relative;
     font-size: 32px;
     border: none;
     font-family: 'Rubik';
     color: rgb(173, 187, 184);
     transition: 0.5s ease-in-out;
-    margin-right: 10px;
 
 }
     .buttons-hero:hover{
         color:rgb(46, 204, 221);
+        transform: scale(1.1);
     }
 
 
@@ -202,19 +214,16 @@ section{
 
 }
 .header-wrapping{
-    padding: 1rem;
-    padding-bottom: 10rem;
-    opacity: 0.9;
-    padding-top: 10rem;
+    padding: 0rem 0 0 0;
+    margin-top: 0rem;
+    
     
     visibility: visible;
     height: 100vh;
     width: 100vw;
-    z-index: 10;
+    z-index: 0;
     position:relative;
-    /*background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #0b1515 100%), 
-        url('./images/BG_mine_2.PNG');*/
+    
         
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,6 +233,7 @@ section{
 .header-text-container{
     margin-left: 5rem;
     align-content: center;
+    
 }
 
 .skill-container{
@@ -245,9 +255,7 @@ section{
     display: flex;
     flex-direction: row;
 }
-    .contact-positioning{
-        margin-left: 10rem;
-    }
+    
     .email-in{
         width:50%
     }
@@ -308,6 +316,7 @@ form{
     body{
         
         z-index: 1;
+        margin: 0 0 5rem 0;
         
         
     }
@@ -375,28 +384,33 @@ form{
         
     }
     .header-wrapping{
-        margin-top: 5rem;
+        
         justify-content: center;
-        padding: 0rem;
+        
     }
     .nav-container{
+       
         padding: 0rem;
-        margin: 0rem;
         width: 100vw;
         height: 6rem;
-        z-index: 1000;
+        z-index: 100;
         top: 0;
         right: 0;
         left: 0;
-        position: fixed;
+        
     }
+    header{
+        margin-top: 6rem;
+    }
+   
 
     .header-text-container{
-        margin: 0rem;
-        position: relative;
+        margin: 0rem 0 0 0;
+        position: static;
         justify-content: center;
         justify-self: center;
-        padding: 0rem;
+        width: 80vw;
+        padding:  1px 0 0 0rem;
     }
     .nav-style{
         visibility: hidden;
@@ -408,6 +422,7 @@ form{
         margin: 1rem;
         
     }
+   
 
     .normal-text{
         font-size: 1.2rem;
@@ -444,7 +459,50 @@ form{
         margin: 0rem;
         padding: 0rem;
     }
+
+    /*Side navigation ONLY!*/
+
+    .sidenav{
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        display: none;
+        
+        z-index: 999;
+        background-color: #030d0d;
+        visibility: visible;
+        
+    }
+    .sidenav li{
+        width: 100%;
+        height: 50px;
+        gap: 60px;
+        align-items: center;
+        
+    }
+    
+    .sidenav ul{
+        padding: 0;
+        justify-content: center;
+        height: 30%;
+        margin-right: 10px;
+    }
+    .sidenav a{
+        width: 100%;
+        
+    }
 }
+
+@media screen and (max-width: 425px){ /*Mid range to old phones*/
+
+    .sidenav{
+        width: 150px
+    }
+
+}
+
 
 
 

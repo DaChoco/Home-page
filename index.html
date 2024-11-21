@@ -26,8 +26,19 @@
             <!--End of TITLE-->
             
             <!--Start of links-->
-            <div class="nav-style">
-                <i class="menu-icon fa-solid fa-bars fa-2x" onclick="toggleMenu()"></i> <!--Menu Icon-->
+            <div class="nav-style" >
+                <i class="menu-icon fa-solid fa-bars fa-2x" width="48" onclick=toggleMenu()></i> <!--Menu Icon-->
+                <div class="sidenav">
+                        
+                    <ul>
+                        <li><span class="nav-text">Menu:</span></li>
+                        <li><a href="#Home" class="nav-text">Home</a></li>
+                        <li><a href="#About-me" class="nav-text">About</a></li>
+                        <li><a href= "#Skills" class="nav-text">Expertise</a></li>
+                        <li><a href= "#Projects" class="nav-text">Work and projects</a></li>
+                        <li><a href="cv-Maile.pdf" class="nav-text" download="cv-Maile.pdf">Download CV</a></li>
+                    </ui>  
+                </div>
                 <ul>
                     <li><a href="#Home" class="nav-text">Home</a></li>
                     <li><a href="#About-me" class="nav-text">About</a></li>
@@ -45,11 +56,12 @@
 
         <header>
             <div class="header-wrapping diagonal-split" id="Home">
+                
                 <div class="header-text-container">
-                    <h1><span class="my-intro">Hello. I'm Maile Chokoe, Fullstack developer based in South Africa</span></h1>
+                    <h1 class="my-intro">Hello. I'm Maile Chokoe, Fullstack developer based in South Africa</h1>
                     <h2 class="not-normal_text">I love helping others, so let me help you</h2>
                 </div>
-                <br>
+                
                     <ul class="header-text-container">
                         <li><a class="not-normal_text" href="https://github.com/DaChoco">
                             GitHub<i class="fa-brands fa-github fa-2x icon-front"></i></a>
@@ -60,11 +72,11 @@
                         </li>
 
                     </ul>
+                    <div class="header-text-container">
+                        <button type="submit" href="" class="buttons-hero">Work with me!</button> 
+                    </div>
+                       
                 
-
-                <div class="insidediv-gap">
-                    <a href="" class="buttons-hero">Work with me!</a>
-                </div>
             </div>
     
         </header>
@@ -137,7 +149,7 @@
         </section>
 
         <section id="Emails">
-            <h3 class="section-headings contact-positioning">Contact</h3>
+            <h3 class="section-headings">Contact</h3>
             
             <form>
                 <div class="Email-Container">
