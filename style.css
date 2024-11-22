@@ -22,6 +22,17 @@ i{
     color:rgb(215, 232, 247);
 }
 
+.error-message{
+    display: none;
+    visibility: visible;
+    background-color: #0b222c;
+    color: aliceblue;
+    position: absolute;
+    opacity: 0.85;
+    width: 40vw;
+    z-index: 1000;
+}
+
 .icon-front{
     color:rgb(14, 19, 23);
 
@@ -332,7 +343,7 @@ form{
         justify-self: center;;
         justify-content: center;
         
-        overflow: hidden;
+        
     }
     .intro-container{
         width: 75vw;
@@ -353,7 +364,8 @@ form{
     }
     .skill-container{
         margin: 0rem;
-        width: 75vw;
+        width: 75%;
+        
         justify-self: center;
         
     }
@@ -530,18 +542,33 @@ form{
     .intro-container{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: max-content;
+        width: 9vw;
         overflow: hidden;
 
+    }
+    .intro-container .Project-Container{
+        display: grid;
+        grid-template: 1fr 1fr;
+        margin: 0.5rem;
+        gap: 20px
+    }
+    .project-object img{
+        width: 80%;
     }
 
 }
 
 
-@media screen and (max-width: 425px){ /*Mid range to old phones*/
+@media screen and (max-width: 430px){ /*Mid range to old phones*/
 
     .sidenav{
         width: 60%;
+    }
+    .intro-container{
+        padding: 1rem;
+        margin: 0.5rem;
+        justify-self: center;
+        width: 90vw;
     }
 
 }
