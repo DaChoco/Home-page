@@ -1,3 +1,19 @@
+//This script file will have A procedural thought process. Lets go
+
+let i = 0;
+
+
+
+function typingeffect(id){ //this will form the basis of a typing animation I'll do later
+    var txt;
+    setTimeout ( () => {
+        i++;
+        if (i < txt.length()){
+            typingeffect(id);
+        }
+    }, 50)
+}
+
 function openMenu(){
     const sidebar = document.querySelector('.sidenav');
     sidebar.style.display = 'flex';
