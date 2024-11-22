@@ -15,8 +15,8 @@ header{
 i{
     size: 16px;
     padding: 0;
-    padding-left: 1rem;
-    font-size: 16px;
+    
+    font-size: 22px;
 }
 .icon-skills{
     color:rgb(215, 232, 247);
@@ -46,6 +46,7 @@ body{
     }
 ul { 
     list-style: none;
+    
 }
 h2{
     margin-left: 5rem;
@@ -102,10 +103,7 @@ section{
     }
 
 .intro-container{
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding: 5rem 10rem 5rem 10rem;
     display: flex;     
 }
     .my-photo{
@@ -300,6 +298,7 @@ form{
     flex-direction: column;
     background-color: #0a2a2a;
     margin: 5rem;
+    padding-top: 2rem;
     border-radius: 1rem;
 }
 .menu-icon{
@@ -329,6 +328,7 @@ form{
         grid-template-rows: 3fr;
         grid-template-columns: auto;
         margin: 1rem;
+        padding: 2rem 0 1rem 0;
         justify-self: center;;
         justify-content: center;
         
@@ -385,7 +385,11 @@ form{
     }
     .header-wrapping{
         
-        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+
         
     }
     .nav-container{
@@ -401,16 +405,20 @@ form{
     }
     header{
         margin-top: 6rem;
+        line-height: 2rem;
     }
    
 
     .header-text-container{
         margin: 0rem 0 0 0;
         position: static;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         justify-self: center;
         width: 80vw;
         padding:  1px 0 0 0rem;
+        height: 28vh;
     }
     .nav-style{
         visibility: hidden;
@@ -427,6 +435,9 @@ form{
     .normal-text{
         font-size: 1.2rem;
         padding: 0rem;
+    }
+    .not-normal_text{
+        font-size: 1rem;
     }
     .email-write{
         width: 85%;
@@ -445,19 +456,22 @@ form{
         margin: 0.8rem;
     }
     .send-button{
-        width: 30%;
-        margin: 1rem;
+        width: 40%;
+        margin: 0.5rem 0 0.5rem 0;
     }
     .my-intro{
         justify-self: center;
         position: relative;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 0rem;
         padding: 0;
     }
     .not-normal_text{
         margin: 0rem;
         padding: 0rem;
+    }
+    h2.not-normal_text{
+        opacity: 0.65;
     }
 
     /*Side navigation ONLY!*/
@@ -487,19 +501,47 @@ form{
     .sidenav ul{
         padding: 0;
         justify-content: center;
-        height: 30%;
+        height: 50%;
         margin-right: 1em;
     }
     .sidenav a{
         width: 100%;
         
     }
+    /*End of Side navigation bar*/
+
+    .send-container{
+        justify-content: left;
+    }
+    .buttons-hero{
+        margin: 0;
+        background-color: rgb(50, 196, 99);
+        color:rgb(2, 12, 10);
+        
+    }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 728px){ /*optimizing just the photo for laptops or ipads*/
+
+    .my-photo{
+        width: 100%;
+        height: auto;
+    }
+    .intro-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content;
+        overflow: hidden;
+
+    }
+
+}
+
 
 @media screen and (max-width: 425px){ /*Mid range to old phones*/
 
     .sidenav{
-        width: 150px
+        width: 60%;
     }
 
 }
